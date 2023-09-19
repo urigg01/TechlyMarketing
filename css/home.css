@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Lexend', sans-serif;
+}
+:root{
+    --bg-color: #f1f1f1;
+    --text-color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    transition: all 0.6s ease;   
+    color: var(--text-color);
+}
+
+ul{
+    list-style: none;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.home-section{
+    box-shadow: 0px -20px 25px 0px rgb(0 0 0 / 50%) inset;
+    position: relative;
+    background-color: #8247a7;
+    background-image: linear-gradient(299deg, #8247a7, #280953 73%);
+    padding: 80px;
+    overflow: hidden;
+    min-height: 650px;
+    display: flex;
+}
+
+.home__container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.home__container-top{
+    max-width: 450px;
+    margin-top: 80px;
+}
+
+.home__container-mid{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.home__container-bottom{
+    width: 100%;
+    margin-top: 65px;
+}
+
+.home-top__logo{
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+.h1-home-text{
+    margin: auto;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.h4-home-text{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.home-button{
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    border-style: none;
+    border-radius: 8px;
+    background-color: #280953;
+    background-image: linear-gradient(to top, transparent, #350f74 90%);
+    transform: scale(1);
+    transition: all 0.6s ease;
+    color: #fff;
+    font-size: 11px;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.home-button:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1012px){
+    .home-section{
+        padding: 50px 15px;
+        min-height: 550px;
+    }
+
+    .home__container-top{
+        max-width: 400px;
+        padding: 0 15%;
+    }
+
+    .home__container-mid{
+        margin-top: 50px;
+    }
+
+    .h1-home-text{
+        font-size: 40px;
+    }
+
+    .h4-home-text{
+        font-size: 16px;
+    }
+
+    .home-button{
+        font-size: 10px;
+        padding: 8px 12px;
+    }
+}
+
+@media screen and (max-width: 353px) {
+    .home-button{
+        letter-spacing: 1px;
+    }
+}

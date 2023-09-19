@@ -1,0 +1,195 @@
+.section-3{
+    background-image: linear-gradient(161deg, #8247a7 , #280953 85%);
+    padding: 80px 0 120px;
+    box-shadow: 0px 20px 25px 0px rgb(0 0 0 / 50%) inset
+}
+
+/* 6d0095 */
+
+.grid-container-s3{
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "title title title title"
+        "founder-1 founder-1 grid-text grid-text"
+        "founder-2 founder-2 habilities habilities"
+}
+
+.title{
+    text-align: center;
+    grid-area: title;
+}
+
+.title h3{
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.founder-1{
+    grid-area: founder-1;
+}
+
+.founder-2{
+    grid-area: founder-2;
+}
+
+.grid-text{
+    grid-area: grid-text;
+    font-weight: 300;
+    margin: auto;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.founder{
+    margin: auto;
+    width: 100%;
+}
+
+.founder-container{
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 40px;
+    align-items: center;
+}
+
+.founder-image{
+    /* min-height: 200px;
+    min-width: 200px; */
+    max-width: 230px;
+    max-height: 230px;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.founder-image img{
+    /* min-height: 200px;
+    min-width: 200px; */
+    max-width: 230px;
+    max-height: 230px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #8247a7
+}
+
+.founder-description{
+    text-align: center;
+    margin: auto 0;
+}
+
+.founder-description h1{
+font-size: 20px;
+}
+
+.founder-description h2{
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.habilities{
+    grid-area: habilities;
+    background-color: transparent;
+}
+
+.hability-bar{
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    height: 10px;
+    margin-bottom: 18px;
+}
+
+.hability-bar div{
+    height: 10px;
+    background-color: #8247a7;
+    border-radius: 10px;
+}
+
+.hab-1{
+    width: 95%;
+}
+
+.hab-2{
+    width: 87%;
+}
+
+.hab-3{
+    width: 93%;
+}
+
+.hab-4{
+    width: 90%;
+}
+
+.habilities h2{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width:970px) {
+    .founder-container{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+@media screen and (max-width:864px) {
+    .grid-container-s3{
+        grid-template-areas:
+        "title title title title"
+        "founder-1 founder-1 founder-2 founder-2"
+        "grid-text grid-text grid-text grid-text"
+        "habilities habilities habilities habilities";
+    }
+
+    .section-3{
+        padding-bottom: 80px;
+    }
+}
+
+@media screen and (max-width:864px) {
+    .title h3{
+        font-size: 30px;
+    }
+}
+
+/* @media screen and (max-width:567px) {
+    
+} */
+
+@media screen and (max-width:490px) {
+    .founder-description h1{
+        font-size: 16px;
+    }
+
+    .founder-description h2{
+        font-size: 14px;
+    }
+
+    .grid-container-s3{
+        column-gap: 20px;
+        width: 85%;
+    }
+
+    .section-3{
+        padding: 60px 0;
+    }
+
+    .grid-text{
+        font-size: 14px;
+        text-align: center;
+    }
+}
